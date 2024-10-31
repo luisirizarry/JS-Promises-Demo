@@ -34,17 +34,16 @@
 // ==============================================
 // PROMISES! (using Axios)
 // ==============================================
-// let url = "https://swapi.dev/api/planeasdasts/1/"
-// let ourFirstPromise = axios.get(url);
-// console.log("REQUEST HAS BEEN SENT!")
-// ourFirstPromise.then(res => console.log(res.data))
-// ourFirstPromise.catch(err => console.log("REJECTED!!", err))
-// console.log("I AM THE LAST LINE")
+// let url = "https://swapi.dev/api/planets/1/"
+// let ourFirstPromise = axios.get(url)
+//   .then(res => console.log(res.data))
+//   .catch(() => console.log("REJECTED", err))
+
 
 
 // ==============================================
 // NESTED REQUESTS...still ugly even with promises
-// ==============================================
+// // ==============================================
 // let url = "https://swapi.dev/api/planets/1/"
 // axios.get(url)
 //   .then(res => {
@@ -75,7 +74,7 @@ axios.get(url)
     return axios.get(res.data.films[0])
   })
   .then(res => {
-    console.log("THIRD PROMISE RESOLVED!")
+    console.log("THIRD PROMISE RESOLVED!") 
     console.log(res.data)
   })
   .catch(err => console.log("REJECTED!!", err))

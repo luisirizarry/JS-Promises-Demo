@@ -1,14 +1,14 @@
-function wait3Seconds() {
-  return new Promise((resolve, reject) => {
-    setTimeout(resolve, 3000)
-  })
-}
+// function wait3Seconds() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(resolve, 3000)
+//   })
+// }
 
-wait3Seconds()
-  .then(() => console.log("ALL DONE!"))
-  .catch(() => console.log("ERROR!"))
+// wait3Seconds()
+//   .then(() => console.log("ALL DONE!"))
+//   .catch(() => console.log("ERROR!"))
 
-console.log("STILL WAITING!")
+// console.log("STILL WAITING!")
 
 const h1 = document.querySelector('h1');
 // setTimeout(function () {
